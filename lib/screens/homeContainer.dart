@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:gudo_inventory_app/screens/homeMenu.dart';
+import 'package:gudo_inventory_app/screens/homeTracking.dart';
 
 class HomeContainer extends StatefulWidget {
   const HomeContainer({Key? key}) : super(key: key);
@@ -11,6 +13,7 @@ class HomeContainer extends StatefulWidget {
 
 class _HomeContainerState extends State<HomeContainer> {
   int currentIndex = 0;
+  List<Widget>screens = [HomeMenu(), HomeTracking()];
 
   void onTap(int index){
     setState(() {
@@ -39,6 +42,7 @@ class _HomeContainerState extends State<HomeContainer> {
           )
         ],
       ),
+      body: screens[currentIndex]
     );
   }
 }
