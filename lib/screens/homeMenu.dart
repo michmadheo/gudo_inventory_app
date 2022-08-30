@@ -57,6 +57,12 @@ class _HomeMenuState extends State<HomeMenu> {
           ),
         ],
       ),
+      floatingActionButton: Container(
+        child: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: (){},
+        )
+      ),
     );
   }
 }
