@@ -1,0 +1,1 @@
+String APP_DESCRIPTION = 'info/appDescription';

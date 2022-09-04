@@ -12,9 +12,12 @@ class PizzaInitial extends PizzaState {
 
 class PizzaLoaded extends PizzaState {
   final List<Pizza> pizzas;
-  final String brand = 'Pizza hut';
+  final String brand;
 
-  const PizzaLoaded({required this.pizzas});
+  const PizzaLoaded({
+    required this.pizzas,
+    required this.brand,
+  });
 
   @override
   List<Object> get props => [pizzas];
