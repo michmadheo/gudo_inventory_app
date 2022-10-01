@@ -1,1 +1,1 @@
-String SERVER_URL = 'https://gudo-inventory-backend.herokuapp.com/api/';
+String SERVER_URL = 'https://gudo-inventory-backend.herokuapp.com/gudo_api/';

@@ -53,4 +53,6 @@ class PizzaBloc extends Bloc<PizzaEvent, PizzaState> {
       }
     });
   }
+
+  static void dispatch(LoadPizzaCounter loadPizzaCounter) {}
 }
